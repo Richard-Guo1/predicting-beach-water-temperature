@@ -1,50 +1,55 @@
 #### Preamble ####
-# Purpose: Simulates a dataset of Australian electoral divisions, including the 
-  #state and party that won each division.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
+# Purpose: Simulates a dataset of logged observations of Toronto 
+# beaches, including year, which beach, air and water temperature, 
+# and the number of waterfowl observed.
+# Author: Richard Guo
+# Date: 26 November 2024
+# Contact: richard.guo@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: The `tidyverse` package must be installed
-# Any other information needed? Make sure you are in the `starter_folder` rproj
 
 
 #### Workspace setup ####
 library(tidyverse)
-set.seed(853)
+set.seed(777)
 
 
 #### Simulate data ####
-# State names
-states <- c(
-  "New South Wales",
-  "Victoria",
-  "Queensland",
-  "South Australia",
-  "Western Australia",
-  "Tasmania",
-  "Northern Territory",
-  "Australian Capital Territory"
-)
+# Generate 500 samples
+size <- 500
 
-# Political parties
-parties <- c("Labor", "Liberal", "Greens", "National", "Other")
+# Define the start and end date
+start_year <- 2010
+end_year <- 2023
 
-# Create a dataset by randomly assigning states and parties to divisions
+# Beach names
+beaches <- c("Bluffer's", "Centre Island", "Gibraltar Point", 
+             "Hanlan's Point", "Woodbine", "Other")
+
+# Define minimum and maximum air temperature
+min_air_temp <- 15
+max_air_temp <- 35
+
+# Define minimum and maximum water temperature
+min_water_temp <- 19.0
+max_water_temp <- 26.0
+
+# Create a dataset by randomly assigning years, temperatures, and waterfowl 
+# to beaches
 analysis_data <- tibble(
-  division = paste("Division", 1:151),  # Add "Division" to make it a character
-  state = sample(
-    states,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.25, 0.25, 0.15, 0.1, 0.1, 0.1, 0.025, 0.025) # Rough state population distribution
+  year = sample(
+    start_year:end_year, size, replace = TRUE
   ),
-  party = sample(
-    parties,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.40, 0.40, 0.05, 0.1, 0.05) # Rough party distribution
-  )
+  beach = sample(
+    beaches, size, replace = TRUE
+  ),
+  air_temp = sample(
+    min_air_temp:max_air_temp, size, replace = TRUE
+  ),
+  water_temp = sample(
+    min_water_temp:max_water_temp, size, replace = TRUE
+  ),
+  waterfowl = rpois(size, 30)
 )
 
 
