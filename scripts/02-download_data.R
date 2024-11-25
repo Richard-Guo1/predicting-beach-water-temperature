@@ -4,8 +4,7 @@
 # Date: 25 November 2024
 # Contact: richard.guo@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: none
-# Any other information needed? 
+# Pre-requisites: opendatatoronto, tidyverse, dplyr packages must be installed
 
 
 #### Workspace setup ####
@@ -30,6 +29,6 @@ datastore_resources <- filter(resources, tolower(format) %in% c('csv', 'geojson'
 raw_data <- filter(datastore_resources, row_number()==1) %>% get_resource()
 
 #### Save data ####
-write_csv(raw_data, "inputs/data/raw_data.csv") 
+write_csv(raw_data, "data/01-raw_data/raw_data.csv") 
 
          
