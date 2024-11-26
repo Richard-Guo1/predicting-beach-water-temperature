@@ -31,8 +31,8 @@ min_air_temp <- 15
 max_air_temp <- 35
 
 # Define minimum and maximum water temperature
-min_water_temp <- 19.0
-max_water_temp <- 26.0
+min_water_temp <- as.double(19.0)
+max_water_temp <- as.double(26.0)
 
 # Create a dataset by randomly assigning years, temperatures, and waterfowl 
 # to beaches
@@ -46,12 +46,13 @@ analysis_data <- tibble(
   air_temp = sample(
     min_air_temp:max_air_temp, size, replace = TRUE
   ),
-  water_temp = sample(
-    min_water_temp:max_water_temp, size, replace = TRUE
-  ),
+  water_temp = round(runif(
+    size, min_water_temp, max_water_temp
+  ), 1),
   waterfowl = rpois(size, 30)
 )
 
 
 #### Save data ####
 write_csv(analysis_data, "data/00-simulated_data/simulated_data.csv")
+
