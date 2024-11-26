@@ -1,15 +1,13 @@
 #### Preamble ####
-# Purpose: Tests the structure and validity of the simulated Australian 
-  #electoral divisions dataset.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
+# Purpose: Tests the structure and validity of the simulated Toronto Beach
+  #observations dataset.
+# Author: Richard Guo
+# Date: 26 November 2024
+# Contact: richard.guo@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: 
   # - The `tidyverse` package must be installed and loaded
   # - 00-simulate_data.R must have been run
-# Any other information needed? Make sure you are in the `starter_folder` rproj
-
 
 #### Workspace setup ####
 library(tidyverse)
@@ -26,45 +24,35 @@ if (exists("analysis_data")) {
 
 #### Test data ####
 
-# Check if the dataset has 151 rows
-if (nrow(analysis_data) == 151) {
-  message("Test Passed: The dataset has 151 rows.")
+# Check if the dataset has 500 rows
+if (nrow(analysis_data) == 500) {
+  message("Test Passed: The dataset has 500 rows.")
 } else {
-  stop("Test Failed: The dataset does not have 151 rows.")
+  stop("Test Failed: The dataset does not have 500 rows.")
 }
 
-# Check if the dataset has 3 columns
-if (ncol(analysis_data) == 3) {
-  message("Test Passed: The dataset has 3 columns.")
+# Check if the dataset has 5 columns
+if (ncol(analysis_data) == 5) {
+  message("Test Passed: The dataset has 5 columns.")
 } else {
-  stop("Test Failed: The dataset does not have 3 columns.")
+  stop("Test Failed: The dataset does not have 5 columns.")
 }
 
-# Check if all values in the 'division' column are unique
-if (n_distinct(analysis_data$division) == nrow(analysis_data)) {
-  message("Test Passed: All values in 'division' are unique.")
+# Check if the 'beach' column contains only valid Toronto beach names
+valid_beaches <- c("Bluffer's", "Centre Island", "Gibraltar Point", 
+             "Hanlan's Point", "Woodbine", "Other")
+
+if (all(analysis_data$beach %in% valid_beaches)) {
+  message("Test Passed: The 'beach' column contains only valid Torontonian beach names.")
 } else {
-  stop("Test Failed: The 'division' column contains duplicate values.")
+  stop("Test Failed: The 'beach' column contains invalid beach names.")
 }
 
-# Check if the 'state' column contains only valid Australian state names
-valid_states <- c("New South Wales", "Victoria", "Queensland", "South Australia", 
-                  "Western Australia", "Tasmania", "Northern Territory", 
-                  "Australian Capital Territory")
-
-if (all(analysis_data$state %in% valid_states)) {
-  message("Test Passed: The 'state' column contains only valid Australian state names.")
+# Check if the 'air_temp' column contains only integers
+if (all(analysis_data$air_temp == floor(analysis_data$air_temp))) {
+  message("Test Passed: The 'air_temp' column contains only integers.")
 } else {
-  stop("Test Failed: The 'state' column contains invalid state names.")
-}
-
-# Check if the 'party' column contains only valid party names
-valid_parties <- c("Labor", "Liberal", "Greens", "National", "Other")
-
-if (all(analysis_data$party %in% valid_parties)) {
-  message("Test Passed: The 'party' column contains only valid party names.")
-} else {
-  stop("Test Failed: The 'party' column contains invalid party names.")
+  stop("Test Failed: The 'air_temp' column contains non-integer values.")
 }
 
 # Check if there are any missing values in the dataset
@@ -74,16 +62,17 @@ if (all(!is.na(analysis_data))) {
   stop("Test Failed: The dataset contains missing values.")
 }
 
-# Check if there are no empty strings in 'division', 'state', and 'party' columns
-if (all(analysis_data$division != "" & analysis_data$state != "" & analysis_data$party != "")) {
-  message("Test Passed: There are no empty strings in 'division', 'state', or 'party'.")
+# Check if the 'water_temp' column contains only numbers with one significant digit
+if (all(analysis_data$water_temp == round(analysis_data$water_temp, 1))) {
+  message("Test Passed: The 'water_temp' column has been rounded properly.")
 } else {
-  stop("Test Failed: There are empty strings in one or more columns.")
+  stop("Test Failed: The 'water_temp' column has not been rounded properly.")
 }
 
-# Check if the 'party' column has at least two unique values
-if (n_distinct(analysis_data$party) >= 2) {
-  message("Test Passed: The 'party' column contains at least two unique values.")
+# Check if the 'waterfowl' column contains only positive values
+if (all(analysis_data$waterfowl >= 0)) {
+  message("Test Passed: The 'waterfowl' column contains only positive values.")
 } else {
-  stop("Test Failed: The 'party' column contains less than two unique values.")
+  stop("Test Failed: The 'waterfowl' column contains negative values.")
 }
+
