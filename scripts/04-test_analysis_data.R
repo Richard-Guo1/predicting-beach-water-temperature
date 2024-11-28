@@ -16,9 +16,9 @@ library(testthat)
 analysis_data <- readRDS(here::here("data/02-analysis_data/analysis_data.rds"))
 
 #### Test data ####
-# Test that the dataset has 12 columns
-test_that("dataset has 12 columns", {
-  expect_equal(ncol(analysis_data), 12)
+# Test that the dataset has 13 columns
+test_that("dataset has 13 columns", {
+  expect_equal(ncol(analysis_data), 13)
 })
 
 # Test that the 'airTemp' column is double type
@@ -26,14 +26,14 @@ test_that("'airTemp' is double", {
   expect_type(analysis_data$airTemp, "double")
 })
 
-# Test that the 'waterFowl' column is integer type
-test_that("'waterFowl' is integer", {
-  expect_true(all(analysis_data$waterFowl == floor(analysis_data$waterFowl)))
+# Test that the 'waterTemp' column is double type
+test_that("'waterTemp' is double", {
+  expect_type(analysis_data$waterTemp, "double")
 })
 
-# Test that there are no negative values in the 'waterFowl' column
-test_that("no negative values in 'waterFowl'", {
-  expect_true(all(analysis_data$waterFowl >= 0))
+# Test that 'rain' column is a dummy variable
+test_that("'rain' is a dummy column", {
+  expect_true(all(analysis_data$rain >= 0 & analysis_data$rain <= 1))
 })
 
 
@@ -49,15 +49,7 @@ test_that("no missing values in dataset", {
 
 # Test that the Bluffer's Bay Beach base case exists
 test_that("base case exists", {
-  expect_true(!is_empty(analysis_data[analysis_data$isCentreIsland == 0 & 
-                                        analysis_data$isCherry == 0 &
-                                        analysis_data$isGibraltarPoint == 0 &
-                                        analysis_data$isHanlansPoint == 0 &
-                                        analysis_data$isKewBalmy == 0 &
-                                        analysis_data$isMarieCurtis == 0 &
-                                        analysis_data$isSunnyside == 0 &
-                                        analysis_data$isWardsIsland == 0 &
-                                        analysis_data$isWoodbine == 0,]))
+  expect_true(!is_empty(analysis_data[sum(analysis_data[,5:13] == 0),]))
 })
 
 # Test that Centre Island Beach has datapoints
@@ -107,6 +99,6 @@ test_that("'Woodbine Beach' has observations", {
 
 # Test that beach indicator variables are exclusive
 test_that("Indicator dummies are exclusive", {
-  expect_true(all(sum(analysis_data[,4:12] <= 1)))
+  expect_true(all(sum(analysis_data[,5:13] <= 1)))
 })
 
