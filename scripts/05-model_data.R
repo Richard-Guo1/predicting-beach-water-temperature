@@ -1,32 +1,28 @@
 #### Preamble ####
-# Purpose: Models the amount of water fowl observed as a linear regression with 
-  # predictors of beach, water temperature, and air temperature.
+# Purpose: Models the expected beach water temperature as a linear regression 
+` # with air temperature, recent rainfall, and beach location as predictors
 # Author: Richard Guo
 # Date: 27 November 2024
 # Contact: richard.guo@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
+# Pre-requisites:
+  # 03-clean_data.R must have been run
+  # The 'tidyverse' package must be installed
 
 
 #### Workspace setup ####
 library(tidyverse)
-library(rstanarm)
 
 #### Read data ####
 analysis_data <- readRDS("data/02-analysis_data/analysis_data.rds")
 
 ### Model data ####
 first_model <-
-  stan_glm(
-    formula = waterFowl ~ airTemp + isCentreIsland + isCherry
+  lm(
+    formula = waterTemp ~ rain * airTemp + isCentreIsland + isCherry
               + isGibraltarPoint + isHanlansPoint + isKewBalmy + isMarieCurtis 
               + isSunnyside + isWardsIsland + isWoodbine,
     data = analysis_data,
-    family = gaussian(),
-    prior = normal(location = 0, scale = 2.5, autoscale = TRUE),
-    prior_intercept = normal(location = 0, scale = 2.5, autoscale = TRUE),
-    prior_aux = exponential(rate = 1, autoscale = TRUE),
-    seed = 853
   )
 
 
