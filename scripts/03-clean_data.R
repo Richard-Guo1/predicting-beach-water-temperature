@@ -17,12 +17,12 @@ library(fastDummies)
 raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 
 cleaned_data <- raw_data |>
-  na.omit() |>
-  select(dataCollectionDate, beachName, airTemp, waterTemp, waterFowl) |>
+  select(dataCollectionDate, beachName, airTemp, waterFowl) |>
   dplyr::mutate(year = lubridate::year(dataCollectionDate)) |>
   fastDummies::dummy_cols(select_columns = "beachName") |>
   subset(select = -c(dataCollectionDate, beachName, 
                      `beachName_Bluffer's Beach Park`)) |>
+  na.omit() |>
   rename(
     isCentreIsland = `beachName_Centre Island Beach`,
     isCherry = `beachName_Cherry Beach`,
