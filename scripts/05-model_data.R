@@ -18,7 +18,7 @@ analysis_data <- readRDS("data/02-analysis_data/analysis_data.rds")
 ### Model data ####
 first_model <-
   stan_glm(
-    formula = waterFowl ~ airTemp + waterTemp + isCentreIsland + isCherry
+    formula = waterFowl ~ airTemp + isCentreIsland + isCherry
               + isGibraltarPoint + isHanlansPoint + isKewBalmy + isMarieCurtis 
               + isSunnyside + isWardsIsland + isWoodbine,
     data = analysis_data,
