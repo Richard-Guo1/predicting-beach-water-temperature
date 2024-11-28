@@ -16,9 +16,14 @@ library(fastDummies)
 #### Clean data ####
 raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 
+# Manually remove rows with 'N/A' in rain column
+raw_data <- raw_data[raw_data$rain != "N/A",]
+
+# Clean rest of data
 cleaned_data <- raw_data |>
-  select(dataCollectionDate, beachName, airTemp, waterFowl) |>
-  dplyr::mutate(year = lubridate::year(dataCollectionDate)) |>
+  select(dataCollectionDate, beachName, airTemp, rain, waterTemp) |>
+  dplyr::mutate(year = lubridate::year(dataCollectionDate), 
+                rain = recode(rain, Yes = 1, No = 0)) |>
   fastDummies::dummy_cols(select_columns = "beachName") |>
   subset(select = -c(dataCollectionDate, beachName, 
                      `beachName_Bluffer's Beach Park`)) |>
@@ -35,10 +40,10 @@ cleaned_data <- raw_data |>
     isWoodbine = `beachName_Woodbine Beaches`
   )
   
-# The waterFowl column currently has a sample mean of 28.92 and a sample 
-  # standard deviation of 40.301. Outlying values of observations over 150 
-  # will be removed.
-cleaned_data <- cleaned_data[cleaned_data$waterFowl < 150,]
+# Remove the rows with outlying waterTemp data
+cleaned_data <- cleaned_data[cleaned_data$waterTemp <= 
+                               mean(cleaned_data$waterTemp) +
+                               3*sd(cleaned_data$waterTemp),]
 
 #### Save data ####
 write_rds(cleaned_data, "data/02-analysis_data/analysis_data.rds")
