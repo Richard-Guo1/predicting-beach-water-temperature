@@ -31,11 +31,11 @@ if (nrow(analysis_data) == 500) {
   stop("Test Failed: The dataset does not have 500 rows.")
 }
 
-# Check if the dataset has 5 columns
-if (ncol(analysis_data) == 5) {
-  message("Test Passed: The dataset has 5 columns.")
+# Check if the dataset has 4 columns
+if (ncol(analysis_data) == 4) {
+  message("Test Passed: The dataset has 4 columns.")
 } else {
-  stop("Test Failed: The dataset does not have 5 columns.")
+  stop("Test Failed: The dataset does not have 4 columns.")
 }
 
 # Check if the 'beach' column contains only valid Toronto beach names
@@ -60,13 +60,6 @@ if (all(!is.na(analysis_data))) {
   message("Test Passed: The dataset contains no missing values.")
 } else {
   stop("Test Failed: The dataset contains missing values.")
-}
-
-# Check if the 'water_temp' column contains only numbers with one significant digit
-if (all(analysis_data$water_temp == round(analysis_data$water_temp, 1))) {
-  message("Test Passed: The 'water_temp' column has been rounded properly.")
-} else {
-  stop("Test Failed: The 'water_temp' column has not been rounded properly.")
 }
 
 # Check if the 'waterfowl' column contains only positive values
