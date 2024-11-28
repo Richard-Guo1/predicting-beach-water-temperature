@@ -1,8 +1,14 @@
-# Predicting the observed number of water fowl in Toronto beaches
+# Predicting the Water Temperature of Toronto Beaches based on the Air Temperature
 
 ## Overview
 
-This repo contains the code, raw, and cleaned data used in the creation of the paper 'Predicting Observations of Water Fowl in Toronto Beaches', title pending. 
+This repo contains the code, raw, and cleaned data used in the creation of the 
+paper 'Predicting the Water Temperature in Toronto Beaches'. The data used 
+to conduct this analysis was obtained from the Open Data Toronto database 
+through the opendatatoronto R package. The specific dataset which was used was 
+'Toronto Beaches Observations', created by Toronto's department of Parks, 
+Forestry and Recreation, found at 
+https://open.toronto.ca/dataset/toronto-beaches-observations/. 
 
 ## File Structure
 
