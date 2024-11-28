@@ -35,6 +35,10 @@ cleaned_data <- raw_data |>
     isWoodbine = `beachName_Woodbine Beaches`
   )
   
+# The waterFowl column currently has a sample mean of 28.92 and a sample 
+  # standard deviation of 40.301. Outlying values of observations over 150 
+  # will be removed.
+cleaned_data <- cleaned_data[cleaned_data$waterFowl < 150,]
 
 #### Save data ####
 write_rds(cleaned_data, "data/02-analysis_data/analysis_data.rds")
