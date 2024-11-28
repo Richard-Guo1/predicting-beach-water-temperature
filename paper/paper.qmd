@@ -1,10 +1,7 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
-author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
+title: "Predicting the Water Temperature of Toronto Beaches"
+author: Richard Guo
+thanks: "Code and data are available at: [https://github.com/Richard-Guo1/predicting-beach-water-temperature](https://github.com/Richard-Guo1/predicting-beach-water-temperature)."
 date: today
 date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
@@ -19,7 +16,8 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
-library(palmerpenguins)
+library(knitr)
+beachData <- readRDS(here::here("data/02-analysis_data/analysis_data.rds"))
 ```
 
 
@@ -44,8 +42,7 @@ Telegraphing paragraph: The remainder of this paper is structured as follows. @s
 
 ## Overview
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
-
+The data used in this paper is derived from Open Data Toronto and is read into this paper through the opendatatoronto library [@opendatatoronto]. The particular data set used to analyze the observations made by city staff on the conditions of all guarded Toronto beaches between the months of May and September [@beaches]. All the data analysis was done through R [@citeR] with the aid of the following packages: tidyverse [@tidyverse], fastDummies[@fastdummies], here [@here], dplyr [@dplyr], tibble [@tibble], janitor [@janitor], ggplot2 [@ggplot], and knitr [@knitr]
 Overview text
 
 ## Measurement

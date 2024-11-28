@@ -1,501 +1,501 @@
-year,beach,air_temp,waterfowl
-2017,Gibraltar Point,32,20
-2010,Gibraltar Point,35,29
-2019,Woodbine,30,23
-2021,Hanlan's Point,18,28
-2023,Centre Island,21,25
-2023,Gibraltar Point,17,21
-2012,Bluffer's,24,22
-2021,Other,18,29
-2019,Woodbine,30,36
-2021,Other,33,25
-2018,Centre Island,33,34
-2018,Bluffer's,20,27
-2013,Hanlan's Point,29,24
-2013,Gibraltar Point,21,29
-2019,Hanlan's Point,22,28
-2016,Centre Island,25,27
-2015,Gibraltar Point,34,27
-2014,Woodbine,29,23
-2021,Other,33,36
-2016,Other,30,30
-2017,Bluffer's,22,29
-2023,Centre Island,32,26
-2019,Other,31,22
-2023,Other,23,28
-2011,Hanlan's Point,16,27
-2016,Gibraltar Point,20,27
-2014,Bluffer's,17,24
-2015,Other,30,31
-2017,Gibraltar Point,33,30
-2011,Bluffer's,16,30
-2023,Hanlan's Point,31,23
-2018,Hanlan's Point,34,23
-2021,Gibraltar Point,30,40
-2010,Hanlan's Point,31,28
-2016,Other,26,34
-2011,Other,17,26
-2019,Bluffer's,35,24
-2023,Centre Island,15,36
-2013,Other,25,24
-2010,Gibraltar Point,21,28
-2010,Centre Island,22,30
-2020,Other,29,27
-2020,Hanlan's Point,33,37
-2021,Bluffer's,32,29
-2017,Centre Island,18,36
-2011,Bluffer's,28,24
-2011,Other,24,25
-2010,Centre Island,15,41
-2020,Other,23,34
-2018,Other,19,31
-2022,Hanlan's Point,28,38
-2017,Woodbine,22,36
-2014,Gibraltar Point,33,26
-2022,Hanlan's Point,23,35
-2023,Hanlan's Point,26,36
-2023,Gibraltar Point,30,39
-2014,Centre Island,26,23
-2018,Bluffer's,21,22
-2018,Gibraltar Point,33,26
-2021,Other,30,22
-2014,Centre Island,31,30
-2016,Woodbine,25,22
-2014,Centre Island,32,29
-2015,Other,35,32
-2012,Woodbine,23,40
-2019,Other,16,32
-2012,Woodbine,35,33
-2011,Bluffer's,31,26
-2020,Gibraltar Point,27,30
-2016,Bluffer's,21,30
-2010,Bluffer's,26,34
-2023,Gibraltar Point,28,29
-2018,Hanlan's Point,23,35
-2012,Woodbine,25,25
-2015,Centre Island,16,24
-2015,Gibraltar Point,27,24
-2018,Gibraltar Point,15,24
-2014,Hanlan's Point,17,27
-2016,Gibraltar Point,34,35
-2012,Centre Island,21,31
-2015,Gibraltar Point,33,35
-2021,Other,30,24
-2013,Gibraltar Point,29,33
-2011,Gibraltar Point,17,31
-2010,Bluffer's,23,37
-2022,Gibraltar Point,27,36
-2012,Centre Island,30,29
-2022,Centre Island,18,32
-2022,Bluffer's,20,20
-2013,Hanlan's Point,17,34
-2015,Centre Island,21,29
-2012,Hanlan's Point,32,28
-2015,Hanlan's Point,29,28
-2020,Woodbine,32,24
-2017,Other,28,25
-2020,Hanlan's Point,16,32
-2022,Gibraltar Point,28,37
-2015,Centre Island,23,34
-2022,Other,18,33
-2011,Bluffer's,31,33
-2021,Hanlan's Point,32,30
-2023,Centre Island,31,33
-2022,Other,19,27
-2015,Gibraltar Point,34,34
-2015,Centre Island,30,33
-2015,Woodbine,34,26
-2011,Centre Island,16,29
-2023,Other,35,33
-2021,Centre Island,27,30
-2013,Bluffer's,26,40
-2018,Bluffer's,31,28
-2015,Woodbine,33,30
-2023,Woodbine,19,39
-2012,Gibraltar Point,19,27
-2016,Other,35,44
-2023,Hanlan's Point,25,26
-2023,Centre Island,28,29
-2013,Gibraltar Point,35,28
-2022,Bluffer's,24,24
-2021,Woodbine,28,22
-2019,Woodbine,23,28
-2011,Bluffer's,21,33
-2018,Woodbine,25,34
-2019,Hanlan's Point,16,34
-2013,Woodbine,25,29
-2012,Woodbine,21,36
-2015,Woodbine,24,27
-2011,Woodbine,29,31
-2016,Other,32,34
-2014,Centre Island,29,30
-2010,Hanlan's Point,28,31
-2016,Bluffer's,27,33
-2020,Gibraltar Point,32,19
-2011,Bluffer's,22,36
-2018,Other,22,39
-2015,Gibraltar Point,18,27
-2014,Hanlan's Point,33,44
-2021,Other,24,36
-2019,Woodbine,32,33
-2014,Other,24,26
-2017,Centre Island,32,32
-2018,Centre Island,35,29
-2023,Centre Island,20,27
-2018,Gibraltar Point,26,35
-2013,Centre Island,16,32
-2013,Bluffer's,24,37
-2017,Woodbine,30,38
-2013,Centre Island,28,31
-2011,Centre Island,21,38
-2010,Hanlan's Point,20,27
-2012,Woodbine,29,29
-2023,Woodbine,35,31
-2023,Other,30,28
-2023,Hanlan's Point,20,24
-2022,Woodbine,20,26
-2016,Centre Island,34,43
-2022,Other,32,35
-2011,Centre Island,15,30
-2016,Woodbine,15,23
-2021,Gibraltar Point,23,27
-2017,Centre Island,27,30
-2014,Bluffer's,24,30
-2016,Centre Island,23,29
-2018,Woodbine,31,31
-2010,Hanlan's Point,15,26
-2019,Other,25,27
-2018,Woodbine,35,34
-2017,Hanlan's Point,29,30
-2014,Bluffer's,30,31
-2011,Gibraltar Point,30,33
-2019,Hanlan's Point,33,30
-2017,Gibraltar Point,17,22
-2021,Other,31,30
-2013,Woodbine,26,30
-2014,Centre Island,26,44
-2022,Other,28,33
-2015,Hanlan's Point,21,23
-2014,Gibraltar Point,33,29
-2019,Bluffer's,26,16
-2020,Bluffer's,24,32
-2017,Woodbine,15,32
-2020,Centre Island,25,37
-2012,Other,31,28
-2021,Hanlan's Point,31,28
-2012,Centre Island,16,30
-2012,Gibraltar Point,32,31
-2012,Bluffer's,15,24
-2021,Woodbine,25,28
-2011,Woodbine,24,31
-2015,Centre Island,29,38
-2023,Gibraltar Point,18,29
-2022,Hanlan's Point,23,29
-2019,Centre Island,18,29
-2011,Bluffer's,27,29
-2011,Woodbine,27,25
-2011,Gibraltar Point,29,32
-2020,Bluffer's,27,23
-2020,Bluffer's,18,33
-2017,Bluffer's,32,18
-2018,Bluffer's,26,17
-2020,Centre Island,35,19
-2019,Gibraltar Point,32,26
-2019,Centre Island,17,31
-2018,Hanlan's Point,27,35
-2022,Centre Island,34,28
-2020,Other,17,29
-2015,Hanlan's Point,32,25
-2017,Other,27,22
-2021,Bluffer's,28,30
-2015,Other,32,35
-2014,Gibraltar Point,22,27
-2016,Centre Island,26,30
-2018,Other,25,30
-2011,Centre Island,27,34
-2010,Centre Island,33,21
-2012,Woodbine,28,36
-2012,Centre Island,24,28
-2022,Hanlan's Point,21,33
-2013,Other,21,36
-2023,Other,30,30
-2016,Other,20,34
-2015,Bluffer's,17,33
-2021,Other,29,28
-2014,Gibraltar Point,19,23
-2019,Other,25,44
-2020,Hanlan's Point,35,27
-2022,Bluffer's,18,33
-2012,Bluffer's,33,45
-2022,Woodbine,21,21
-2022,Gibraltar Point,16,34
-2016,Bluffer's,24,37
-2011,Gibraltar Point,31,27
-2022,Gibraltar Point,19,28
-2023,Hanlan's Point,16,39
-2022,Bluffer's,29,31
-2012,Gibraltar Point,15,33
-2019,Woodbine,22,36
-2010,Gibraltar Point,28,26
-2015,Woodbine,24,23
-2019,Other,24,31
-2015,Bluffer's,20,33
-2012,Gibraltar Point,27,34
-2011,Bluffer's,17,38
-2016,Woodbine,30,31
-2012,Hanlan's Point,16,26
-2022,Gibraltar Point,17,33
-2016,Gibraltar Point,27,28
-2014,Other,31,27
-2020,Other,23,25
-2018,Bluffer's,18,33
-2020,Centre Island,23,28
-2011,Bluffer's,26,27
-2013,Centre Island,25,30
-2010,Centre Island,19,28
-2017,Centre Island,24,22
-2016,Gibraltar Point,16,28
-2011,Woodbine,16,29
-2023,Other,33,33
-2012,Centre Island,31,29
-2016,Gibraltar Point,25,34
-2014,Other,35,36
-2020,Other,23,32
-2014,Hanlan's Point,23,27
-2017,Gibraltar Point,33,28
-2016,Bluffer's,34,31
-2011,Other,25,21
-2016,Centre Island,34,31
-2012,Centre Island,24,25
-2012,Woodbine,23,20
-2018,Gibraltar Point,28,22
-2014,Gibraltar Point,35,33
-2023,Other,19,32
-2020,Other,35,33
-2021,Centre Island,20,21
-2016,Centre Island,15,33
-2017,Bluffer's,23,28
-2019,Woodbine,33,31
-2012,Gibraltar Point,28,33
-2010,Other,22,25
-2020,Hanlan's Point,22,32
-2017,Centre Island,31,31
-2016,Centre Island,16,35
-2019,Bluffer's,28,41
-2010,Other,20,24
-2011,Gibraltar Point,19,33
-2017,Gibraltar Point,24,28
-2013,Centre Island,27,34
-2014,Hanlan's Point,30,20
-2020,Centre Island,30,24
-2019,Gibraltar Point,24,29
-2018,Woodbine,32,41
-2011,Centre Island,23,28
-2017,Woodbine,16,33
-2016,Bluffer's,17,32
-2015,Centre Island,19,29
-2012,Woodbine,21,23
-2010,Other,29,26
-2016,Gibraltar Point,30,27
-2017,Other,15,21
-2021,Other,20,31
-2016,Woodbine,18,30
-2016,Other,23,37
-2022,Woodbine,25,18
-2012,Gibraltar Point,20,39
-2017,Gibraltar Point,25,36
-2020,Woodbine,20,32
-2013,Woodbine,28,35
-2016,Other,35,26
-2019,Other,32,31
-2023,Bluffer's,20,31
-2020,Bluffer's,24,35
-2022,Centre Island,26,22
-2022,Hanlan's Point,34,23
-2022,Other,31,27
-2018,Gibraltar Point,25,33
-2018,Bluffer's,26,31
-2019,Gibraltar Point,20,33
-2022,Gibraltar Point,35,36
-2017,Bluffer's,25,33
-2021,Woodbine,19,23
-2012,Hanlan's Point,26,29
-2015,Other,18,19
-2022,Centre Island,16,31
-2012,Bluffer's,19,24
-2014,Centre Island,15,26
-2020,Bluffer's,34,32
-2020,Hanlan's Point,27,25
-2022,Hanlan's Point,26,32
-2015,Hanlan's Point,22,38
-2017,Bluffer's,25,35
-2014,Bluffer's,34,35
-2019,Centre Island,30,35
-2018,Woodbine,15,35
-2017,Hanlan's Point,31,31
-2019,Hanlan's Point,29,23
-2021,Bluffer's,17,36
-2018,Woodbine,28,31
-2010,Centre Island,24,37
-2017,Centre Island,16,34
-2023,Bluffer's,26,39
-2017,Bluffer's,20,30
-2014,Gibraltar Point,17,32
-2012,Gibraltar Point,25,26
-2017,Bluffer's,31,26
-2011,Gibraltar Point,26,28
-2011,Centre Island,24,34
-2013,Gibraltar Point,17,27
-2012,Hanlan's Point,24,28
-2010,Hanlan's Point,27,30
-2021,Other,20,27
-2013,Centre Island,31,29
-2023,Other,20,23
-2013,Centre Island,27,30
-2012,Gibraltar Point,34,27
-2021,Centre Island,24,32
-2018,Bluffer's,34,39
-2016,Hanlan's Point,33,34
-2020,Centre Island,26,30
-2011,Woodbine,27,32
-2018,Other,25,37
-2017,Woodbine,25,31
-2010,Gibraltar Point,32,24
-2011,Hanlan's Point,22,27
-2020,Bluffer's,27,30
-2012,Hanlan's Point,29,34
-2010,Gibraltar Point,19,32
-2020,Gibraltar Point,21,19
-2018,Woodbine,26,20
-2023,Other,28,28
-2014,Hanlan's Point,24,32
-2018,Centre Island,30,33
-2010,Bluffer's,27,30
-2017,Woodbine,35,33
-2013,Hanlan's Point,21,33
-2018,Bluffer's,22,22
-2013,Other,30,30
-2013,Hanlan's Point,25,37
-2011,Woodbine,18,29
-2021,Woodbine,32,22
-2017,Hanlan's Point,33,34
-2010,Gibraltar Point,35,28
-2019,Gibraltar Point,31,23
-2019,Bluffer's,21,38
-2020,Gibraltar Point,19,27
-2010,Bluffer's,21,22
-2012,Woodbine,22,30
-2020,Other,15,29
-2017,Other,26,50
-2011,Other,21,18
-2017,Hanlan's Point,22,35
-2017,Bluffer's,31,32
-2012,Centre Island,26,25
-2010,Hanlan's Point,27,30
-2023,Other,28,27
-2015,Bluffer's,30,22
-2018,Other,31,35
-2015,Bluffer's,15,19
-2022,Bluffer's,27,32
-2013,Hanlan's Point,17,26
-2021,Woodbine,31,32
-2023,Centre Island,21,33
-2010,Hanlan's Point,28,38
-2019,Hanlan's Point,33,29
-2010,Hanlan's Point,33,34
-2014,Gibraltar Point,29,35
-2020,Hanlan's Point,18,36
-2020,Woodbine,23,24
-2021,Centre Island,29,33
-2012,Bluffer's,20,28
-2022,Hanlan's Point,23,28
-2023,Woodbine,26,22
-2011,Other,33,32
-2023,Centre Island,27,34
-2018,Centre Island,18,26
-2018,Bluffer's,21,32
-2018,Bluffer's,15,38
-2010,Bluffer's,26,27
-2019,Bluffer's,35,31
-2023,Woodbine,32,30
-2023,Centre Island,35,32
-2022,Other,35,31
-2015,Hanlan's Point,27,27
-2017,Hanlan's Point,31,31
-2018,Hanlan's Point,25,32
-2016,Gibraltar Point,35,38
-2016,Centre Island,22,23
-2020,Woodbine,35,23
-2023,Gibraltar Point,24,40
-2023,Centre Island,34,19
-2016,Woodbine,27,27
-2015,Other,27,32
-2010,Hanlan's Point,23,26
-2018,Centre Island,21,29
-2023,Hanlan's Point,19,31
-2015,Bluffer's,32,29
-2015,Hanlan's Point,35,33
-2020,Hanlan's Point,19,36
-2015,Centre Island,15,32
-2019,Bluffer's,23,29
-2023,Other,22,32
-2016,Woodbine,35,26
-2023,Hanlan's Point,31,28
-2015,Hanlan's Point,32,30
-2021,Bluffer's,29,27
-2023,Hanlan's Point,19,39
-2023,Centre Island,23,33
-2013,Centre Island,26,24
-2021,Gibraltar Point,25,24
-2019,Woodbine,34,29
-2010,Bluffer's,20,43
-2018,Centre Island,34,28
-2022,Hanlan's Point,33,47
-2010,Other,18,36
-2023,Hanlan's Point,27,28
-2010,Hanlan's Point,15,32
-2013,Other,20,33
-2020,Centre Island,31,34
-2014,Other,18,25
-2015,Bluffer's,24,32
-2012,Bluffer's,24,37
-2010,Hanlan's Point,33,28
-2017,Other,17,29
-2015,Hanlan's Point,25,35
-2012,Other,35,30
-2011,Woodbine,34,39
-2019,Bluffer's,29,18
-2023,Woodbine,31,32
-2017,Other,35,28
-2010,Gibraltar Point,30,25
-2010,Hanlan's Point,22,37
-2023,Woodbine,30,30
-2014,Gibraltar Point,17,37
-2015,Woodbine,20,28
-2016,Other,27,31
-2021,Woodbine,32,38
-2015,Hanlan's Point,32,24
-2011,Other,27,28
-2023,Centre Island,32,32
-2016,Centre Island,15,40
-2013,Woodbine,19,28
-2015,Gibraltar Point,25,34
-2014,Centre Island,21,31
-2019,Centre Island,18,27
-2015,Bluffer's,31,19
-2016,Other,22,22
-2016,Other,22,33
-2012,Gibraltar Point,33,35
-2016,Gibraltar Point,33,31
-2021,Other,29,23
-2011,Bluffer's,26,32
-2010,Centre Island,20,39
-2021,Hanlan's Point,27,33
-2019,Hanlan's Point,20,31
-2019,Centre Island,29,34
-2011,Bluffer's,34,41
-2018,Woodbine,35,29
-2015,Bluffer's,21,30
-2022,Bluffer's,19,21
-2017,Gibraltar Point,22,25
-2011,Hanlan's Point,27,31
+year,beach,air_temp,water_temp,rain
+2017,Hanlan's Point,28,16.95,No
+2010,Other,28,10.64,Yes
+2019,Centre Island,27,19.52,No
+2021,Other,28,14.12,No
+2023,Hanlan's Point,23,19.82,No
+2023,Other,29,12.74,Yes
+2012,Woodbine,14,8.59,No
+2021,Centre Island,21,21.39,No
+2019,Other,20,14.11,No
+2021,Gibraltar Point,18,11.97,No
+2018,Hanlan's Point,30,12.89,No
+2018,Centre Island,24,18.71,No
+2013,Bluffer's,24,10.35,Yes
+2013,Hanlan's Point,16,12.74,No
+2019,Centre Island,35,13.26,No
+2016,Centre Island,27,15.17,No
+2015,Centre Island,24,4.99,No
+2014,Bluffer's,30,20.19,Yes
+2021,Other,21,20.18,Yes
+2016,Woodbine,22,12.64,No
+2024,Centre Island,18,21.64,Yes
+2017,Gibraltar Point,27,16.17,Yes
+2024,Gibraltar Point,24,10.08,No
+2023,Woodbine,19,26.06,No
+2019,Hanlan's Point,21,26.88,Yes
+2023,Centre Island,22,7.76,No
+2011,Gibraltar Point,29,9.55,Yes
+2016,Bluffer's,16,12.67,Yes
+2014,Other,24,14.01,Yes
+2015,Woodbine,27,22.24,No
+2017,Other,21,18.48,Yes
+2011,Centre Island,29,16.6,Yes
+2023,Bluffer's,29,16.12,Yes
+2018,Hanlan's Point,20,19.83,No
+2021,Gibraltar Point,28,8.31,Yes
+2010,Hanlan's Point,31,11.92,Yes
+2016,Centre Island,20,13.6,No
+2011,Gibraltar Point,25,6.37,No
+2019,Woodbine,21,15.04,Yes
+2023,Other,26,11.87,No
+2013,Other,20,20.03,Yes
+2010,Bluffer's,29,16.08,Yes
+2010,Centre Island,27,20.11,No
+2020,Other,28,19.5,No
+2020,Other,25,14.64,Yes
+2021,Hanlan's Point,20,10.49,Yes
+2017,Gibraltar Point,25,11.54,Yes
+2011,Bluffer's,23,10.33,Yes
+2011,Other,25,15.18,No
+2010,Gibraltar Point,19,19.06,Yes
+2020,Bluffer's,24,30.18,No
+2018,Hanlan's Point,25,7.92,Yes
+2024,Hanlan's Point,14,16.16,No
+2022,Gibraltar Point,26,16.01,No
+2017,Hanlan's Point,26,10.09,Yes
+2014,Other,28,12.75,Yes
+2022,Other,27,14.35,Yes
+2023,Bluffer's,37,25.08,No
+2023,Centre Island,26,17.63,No
+2014,Other,31,19.26,No
+2018,Gibraltar Point,21,21.82,Yes
+2018,Centre Island,32,12.51,No
+2021,Other,25,18.59,Yes
+2014,Hanlan's Point,20,21.33,Yes
+2016,Bluffer's,19,17.73,No
+2014,Centre Island,30,19.48,No
+2015,Bluffer's,24,19.75,Yes
+2024,Other,15,24.07,No
+2024,Centre Island,30,17.66,Yes
+2012,Other,23,13.09,Yes
+2019,Other,21,18.46,No
+2012,Hanlan's Point,20,18.51,No
+2024,Woodbine,22,18.49,Yes
+2011,Gibraltar Point,35,21.87,No
+2020,Hanlan's Point,16,11.87,No
+2016,Hanlan's Point,27,22.88,No
+2010,Gibraltar Point,28,6.11,No
+2023,Centre Island,20,17.07,No
+2018,Bluffer's,26,15.28,No
+2012,Gibraltar Point,22,16.15,Yes
+2015,Other,16,14.31,No
+2015,Centre Island,28,8.91,No
+2018,Woodbine,24,18.12,No
+2014,Centre Island,27,13.34,Yes
+2016,Other,24,12.14,No
+2012,Woodbine,21,13.24,Yes
+2015,Other,21,17.15,No
+2021,Woodbine,21,19.33,Yes
+2013,Bluffer's,34,16.7,No
+2011,Gibraltar Point,21,16.49,No
+2010,Bluffer's,31,16.2,No
+2022,Bluffer's,37,14.63,Yes
+2012,Gibraltar Point,24,17.33,Yes
+2022,Hanlan's Point,25,8.3,Yes
+2022,Woodbine,32,21.11,No
+2013,Centre Island,21,13.76,No
+2015,Gibraltar Point,28,17.74,No
+2012,Gibraltar Point,21,7.73,No
+2015,Hanlan's Point,25,20.04,No
+2020,Gibraltar Point,29,16.86,Yes
+2017,Centre Island,30,19.07,Yes
+2020,Gibraltar Point,29,17.95,No
+2022,Other,17,19.23,Yes
+2015,Gibraltar Point,29,8.29,Yes
+2022,Gibraltar Point,20,17.43,No
+2011,Bluffer's,25,12.63,No
+2021,Gibraltar Point,23,13.59,Yes
+2023,Centre Island,24,29.13,Yes
+2024,Centre Island,17,11.1,Yes
+2022,Bluffer's,30,15.07,Yes
+2015,Hanlan's Point,22,18.04,No
+2015,Centre Island,32,17.22,Yes
+2015,Hanlan's Point,18,21.16,No
+2011,Hanlan's Point,23,26.22,No
+2023,Woodbine,22,10.6,Yes
+2021,Other,16,17.92,Yes
+2013,Hanlan's Point,26,19.08,No
+2018,Gibraltar Point,23,16.97,Yes
+2015,Centre Island,18,17.16,No
+2023,Other,18,24.54,Yes
+2012,Bluffer's,18,11.26,No
+2016,Hanlan's Point,29,22.05,Yes
+2023,Centre Island,21,17.31,No
+2023,Other,32,19.54,No
+2013,Gibraltar Point,33,19.07,Yes
+2022,Centre Island,23,20.34,Yes
+2021,Woodbine,27,15.83,No
+2019,Centre Island,37,17.71,Yes
+2011,Other,23,15.4,Yes
+2018,Centre Island,15,12.6,Yes
+2019,Bluffer's,26,13.45,No
+2013,Bluffer's,24,8.62,No
+2012,Woodbine,30,8.52,No
+2015,Woodbine,23,10.6,No
+2011,Gibraltar Point,23,22.4,Yes
+2016,Other,29,16.42,Yes
+2014,Hanlan's Point,30,7.89,No
+2010,Centre Island,28,9.85,No
+2016,Gibraltar Point,35,24.61,Yes
+2024,Bluffer's,18,21.59,No
+2020,Woodbine,25,18.05,No
+2011,Woodbine,20,20.72,Yes
+2018,Bluffer's,26,13.05,No
+2015,Woodbine,32,16.11,No
+2014,Hanlan's Point,25,8.3,No
+2021,Woodbine,25,12.7,Yes
+2019,Woodbine,21,12.89,No
+2014,Woodbine,29,23.96,Yes
+2024,Woodbine,15,9.71,No
+2017,Other,22,17.23,Yes
+2018,Centre Island,28,13.49,Yes
+2023,Hanlan's Point,21,19.38,No
+2018,Bluffer's,31,17.23,Yes
+2013,Gibraltar Point,22,19,No
+2013,Bluffer's,18,21.48,No
+2017,Other,26,18.87,Yes
+2013,Gibraltar Point,41,9.78,No
+2011,Hanlan's Point,18,15.16,No
+2010,Other,26,18.13,Yes
+2012,Woodbine,31,12.28,No
+2023,Other,37,16.92,No
+2023,Centre Island,17,11.2,No
+2023,Centre Island,21,17.2,Yes
+2022,Centre Island,23,22.13,Yes
+2016,Gibraltar Point,29,18.17,No
+2022,Centre Island,29,12.11,Yes
+2011,Bluffer's,22,21.89,Yes
+2016,Woodbine,21,28.86,Yes
+2021,Centre Island,23,8.58,Yes
+2017,Centre Island,26,24.57,Yes
+2014,Hanlan's Point,22,16.72,Yes
+2016,Woodbine,18,17.94,No
+2018,Woodbine,19,15.19,No
+2010,Other,22,16.91,No
+2019,Hanlan's Point,23,14.02,Yes
+2018,Woodbine,23,21.59,No
+2017,Centre Island,26,17.07,Yes
+2014,Other,39,22.5,Yes
+2011,Centre Island,20,20.2,No
+2019,Woodbine,34,25.12,No
+2024,Gibraltar Point,24,16.82,No
+2017,Centre Island,27,17.84,No
+2021,Bluffer's,30,12.64,No
+2013,Centre Island,24,17.59,Yes
+2014,Woodbine,17,12.44,No
+2022,Hanlan's Point,28,15.04,Yes
+2015,Other,27,20.46,Yes
+2014,Woodbine,30,14.05,No
+2019,Hanlan's Point,26,15.24,No
+2020,Bluffer's,28,16.29,Yes
+2017,Gibraltar Point,27,18.12,No
+2020,Hanlan's Point,24,17.73,Yes
+2012,Gibraltar Point,22,15.85,No
+2021,Other,24,10.21,No
+2012,Woodbine,23,18.09,Yes
+2012,Centre Island,26,2.87,Yes
+2012,Other,23,14.66,No
+2021,Hanlan's Point,25,18.3,No
+2011,Gibraltar Point,24,25,No
+2015,Bluffer's,24,20.29,No
+2023,Bluffer's,24,16.03,Yes
+2022,Woodbine,20,18.02,Yes
+2019,Centre Island,24,22.81,No
+2011,Other,22,17.71,Yes
+2011,Hanlan's Point,30,11.2,No
+2011,Centre Island,25,8.9,No
+2020,Gibraltar Point,25,16.89,Yes
+2020,Bluffer's,34,16.85,No
+2017,Woodbine,24,19.73,Yes
+2018,Woodbine,25,18.08,Yes
+2020,Centre Island,19,6.43,Yes
+2019,Gibraltar Point,19,14.5,No
+2019,Hanlan's Point,17,7.15,Yes
+2018,Centre Island,23,15.04,Yes
+2022,Bluffer's,40,18.6,Yes
+2020,Woodbine,19,19.18,Yes
+2015,Gibraltar Point,22,16.6,No
+2017,Bluffer's,13,19.22,Yes
+2021,Bluffer's,21,18.79,Yes
+2015,Bluffer's,33,8.93,No
+2014,Bluffer's,23,14.98,No
+2016,Centre Island,23,14.83,Yes
+2018,Gibraltar Point,26,12.05,No
+2011,Centre Island,23,17.88,No
+2010,Hanlan's Point,27,9.92,No
+2024,Centre Island,19,20.23,Yes
+2012,Other,30,14.51,Yes
+2012,Hanlan's Point,20,10.09,No
+2022,Other,26,16.04,Yes
+2013,Bluffer's,22,13.03,Yes
+2023,Other,19,15.23,Yes
+2016,Gibraltar Point,19,16.38,No
+2015,Centre Island,24,11.01,No
+2021,Other,28,17.64,No
+2014,Centre Island,18,13.95,No
+2019,Centre Island,18,24.52,No
+2020,Woodbine,22,11.95,Yes
+2024,Centre Island,24,16.78,Yes
+2022,Hanlan's Point,30,15.49,Yes
+2012,Other,33,10.36,Yes
+2022,Other,22,5.89,Yes
+2022,Other,26,17.05,No
+2016,Bluffer's,32,17.41,Yes
+2011,Other,29,21.37,Yes
+2022,Gibraltar Point,23,18.41,No
+2023,Other,18,11.78,Yes
+2022,Hanlan's Point,27,13.32,No
+2012,Bluffer's,26,26.44,Yes
+2019,Bluffer's,21,13.27,No
+2010,Woodbine,17,9.22,No
+2015,Gibraltar Point,23,15.83,Yes
+2019,Bluffer's,35,13.6,Yes
+2015,Gibraltar Point,30,18.29,Yes
+2012,Gibraltar Point,22,18.04,No
+2011,Hanlan's Point,32,13.09,Yes
+2016,Bluffer's,37,19.05,No
+2012,Gibraltar Point,24,21.9,No
+2022,Woodbine,23,20.86,Yes
+2016,Gibraltar Point,26,20.01,Yes
+2014,Woodbine,20,11.32,No
+2020,Other,29,17.1,Yes
+2018,Bluffer's,26,12.75,No
+2020,Gibraltar Point,21,17.45,No
+2011,Bluffer's,18,15.04,No
+2024,Woodbine,31,18.89,No
+2013,Hanlan's Point,29,14.57,No
+2024,Gibraltar Point,22,14.35,Yes
+2010,Gibraltar Point,22,9.32,Yes
+2017,Other,26,28.07,No
+2016,Other,27,18.59,Yes
+2011,Bluffer's,23,17.41,Yes
+2023,Centre Island,28,10.64,No
+2012,Bluffer's,28,18.74,No
+2016,Centre Island,22,23.56,Yes
+2024,Centre Island,23,13.92,No
+2014,Centre Island,25,18.23,No
+2020,Gibraltar Point,24,14.38,Yes
+2014,Woodbine,25,20.04,No
+2017,Other,24,12.91,No
+2016,Centre Island,31,12.63,No
+2011,Gibraltar Point,22,14.68,Yes
+2016,Other,33,17,Yes
+2012,Other,23,18.66,No
+2012,Hanlan's Point,27,24.21,Yes
+2018,Gibraltar Point,32,10.21,Yes
+2014,Bluffer's,25,9.27,Yes
+2023,Other,25,26.45,Yes
+2020,Centre Island,20,25.14,Yes
+2021,Centre Island,29,5.97,No
+2016,Woodbine,26,19.44,No
+2017,Gibraltar Point,27,6.73,No
+2019,Gibraltar Point,27,17.95,Yes
+2012,Other,22,12.85,Yes
+2010,Other,23,20.37,Yes
+2020,Centre Island,26,14.01,No
+2017,Centre Island,27,18.45,No
+2016,Bluffer's,19,13.19,No
+2019,Woodbine,29,26.89,Yes
+2010,Gibraltar Point,25,15.25,Yes
+2011,Other,33,15.44,Yes
+2017,Hanlan's Point,29,22.64,No
+2013,Centre Island,25,18.77,Yes
+2024,Centre Island,21,15.21,No
+2014,Bluffer's,15,14.27,Yes
+2020,Other,26,16.09,Yes
+2019,Gibraltar Point,39,13.37,No
+2018,Gibraltar Point,17,14.98,Yes
+2011,Centre Island,15,15.49,No
+2017,Hanlan's Point,24,12.35,No
+2016,Centre Island,18,16.66,No
+2015,Gibraltar Point,23,11.1,Yes
+2024,Woodbine,20,7.41,Yes
+2012,Centre Island,17,13.7,Yes
+2010,Woodbine,18,11.74,Yes
+2016,Bluffer's,24,21.01,Yes
+2017,Centre Island,31,16.39,No
+2021,Woodbine,20,11.91,No
+2016,Other,29,21.11,Yes
+2016,Gibraltar Point,22,19.86,Yes
+2022,Other,19,7.1,No
+2012,Other,24,19.32,Yes
+2017,Woodbine,23,13.19,No
+2020,Other,23,18.37,Yes
+2013,Woodbine,23,23.03,Yes
+2016,Gibraltar Point,26,14.61,Yes
+2019,Gibraltar Point,19,15.34,No
+2023,Woodbine,31,21.4,Yes
+2020,Woodbine,25,16.73,No
+2022,Other,24,24.36,Yes
+2022,Other,22,5.1,Yes
+2022,Bluffer's,17,19.54,No
+2018,Bluffer's,23,18.08,Yes
+2018,Centre Island,23,10.65,No
+2019,Hanlan's Point,28,24.43,No
+2022,Other,35,22.78,No
+2017,Gibraltar Point,19,16.38,No
+2021,Bluffer's,26,22.92,Yes
+2012,Gibraltar Point,25,14.79,No
+2015,Gibraltar Point,25,17.77,Yes
+2022,Bluffer's,19,23.71,No
+2012,Woodbine,19,10.85,Yes
+2024,Hanlan's Point,34,15.66,No
+2014,Other,23,19.22,Yes
+2020,Centre Island,29,17.83,No
+2020,Bluffer's,21,13.92,No
+2022,Centre Island,20,15.9,Yes
+2015,Bluffer's,31,15.86,No
+2017,Hanlan's Point,20,18.97,Yes
+2014,Hanlan's Point,23,14.13,Yes
+2019,Hanlan's Point,25,6.32,No
+2018,Bluffer's,23,19.64,No
+2017,Bluffer's,21,14.6,No
+2019,Centre Island,24,19.43,No
+2021,Woodbine,30,20.73,Yes
+2018,Hanlan's Point,19,17.24,Yes
+2010,Hanlan's Point,21,9.86,No
+2017,Bluffer's,35,13.78,No
+2023,Woodbine,28,14.8,Yes
+2017,Centre Island,26,12.96,No
+2014,Centre Island,33,19.38,No
+2012,Bluffer's,30,6.57,Yes
+2017,Bluffer's,22,23.72,No
+2011,Gibraltar Point,29,15.73,No
+2011,Gibraltar Point,30,14.98,Yes
+2013,Bluffer's,33,11.16,Yes
+2012,Gibraltar Point,18,14.77,Yes
+2010,Centre Island,18,8.53,Yes
+2021,Gibraltar Point,21,16.39,No
+2013,Hanlan's Point,18,23.83,Yes
+2023,Hanlan's Point,25,19.66,Yes
+2013,Other,17,15.59,Yes
+2012,Centre Island,24,16.24,Yes
+2021,Other,27,7.93,Yes
+2018,Centre Island,34,15.91,Yes
+2024,Gibraltar Point,27,20.67,Yes
+2024,Centre Island,28,17.7,No
+2016,Bluffer's,21,19.62,No
+2024,Hanlan's Point,25,23.05,Yes
+2020,Centre Island,25,22.48,No
+2011,Woodbine,29,19.36,Yes
+2018,Other,24,4.73,Yes
+2017,Woodbine,30,21.74,No
+2010,Gibraltar Point,21,10.74,Yes
+2011,Hanlan's Point,20,10.18,No
+2020,Bluffer's,19,16.37,Yes
+2012,Hanlan's Point,19,18.36,Yes
+2010,Gibraltar Point,22,17.19,No
+2020,Gibraltar Point,30,17.38,Yes
+2018,Woodbine,26,12.2,No
+2023,Other,29,17.93,Yes
+2014,Hanlan's Point,19,17.42,No
+2018,Centre Island,27,18.71,Yes
+2010,Bluffer's,26,11.34,No
+2017,Woodbine,31,11.6,Yes
+2013,Hanlan's Point,31,14.2,No
+2018,Bluffer's,24,9.21,Yes
+2013,Other,27,20.64,Yes
+2013,Hanlan's Point,16,10.59,Yes
+2024,Woodbine,29,17.75,No
+2011,Woodbine,24,12.88,No
+2021,Hanlan's Point,24,11.05,Yes
+2017,Gibraltar Point,23,9.52,No
+2010,Gibraltar Point,20,15.26,No
+2019,Bluffer's,21,18.77,Yes
+2019,Gibraltar Point,27,11.35,Yes
+2020,Bluffer's,32,11.24,Yes
+2010,Woodbine,29,19.23,No
+2012,Other,28,18.55,No
+2020,Other,28,7.55,No
+2017,Other,25,20.78,Yes
+2011,Hanlan's Point,28,15.69,No
+2017,Bluffer's,22,25.25,Yes
+2017,Centre Island,28,16.52,No
+2012,Hanlan's Point,28,21.13,No
+2010,Other,22,15.7,Yes
+2023,Bluffer's,24,17.23,No
+2015,Other,28,24.3,No
+2018,Bluffer's,25,17.02,No
+2015,Bluffer's,34,18.43,Yes
+2022,Hanlan's Point,23,18.31,No
+2013,Woodbine,25,16.96,No
+2021,Centre Island,33,10.68,No
+2023,Hanlan's Point,22,15.62,Yes
+2010,Hanlan's Point,38,21.79,No
+2024,Hanlan's Point,21,5.23,Yes
+2019,Gibraltar Point,24,3.39,Yes
+2010,Hanlan's Point,23,19.4,No
+2014,Woodbine,19,20.5,Yes
+2020,Centre Island,18,13.04,Yes
+2020,Bluffer's,23,19.41,Yes
+2021,Hanlan's Point,28,21.63,Yes
+2012,Woodbine,29,12.51,Yes
+2022,Other,29,21.02,No
+2023,Centre Island,24,12.02,Yes
+2011,Centre Island,31,9.84,Yes
+2023,Bluffer's,23,30.33,Yes
+2018,Bluffer's,34,12.35,Yes
+2018,Bluffer's,24,12.01,Yes
+2018,Bluffer's,28,10.92,Yes
+2010,Woodbine,26,11.57,Yes
+2019,Centre Island,20,26.3,Yes
+2024,Other,15,5.09,No
+2023,Hanlan's Point,31,17.47,Yes
+2023,Hanlan's Point,13,20.64,No
+2022,Hanlan's Point,13,23.63,No
+2015,Gibraltar Point,26,18.25,Yes
+2017,Centre Island,22,20.77,Yes
+2018,Woodbine,27,19.89,Yes
+2016,Gibraltar Point,35,15.69,No
+2016,Centre Island,22,17.52,Yes
+2020,Woodbine,28,19.46,No
+2023,Other,23,9.18,Yes
+2023,Hanlan's Point,28,11.65,Yes
+2016,Centre Island,27,13.84,Yes
+2015,Hanlan's Point,21,24.78,Yes
+2010,Bluffer's,27,14.79,Yes
+2018,Hanlan's Point,24,15.12,No
+2023,Hanlan's Point,22,12.22,No
+2015,Centre Island,30,19.74,Yes
+2015,Bluffer's,26,18.28,No
+2020,Other,31,16.14,Yes
+2015,Woodbine,32,15.61,No
+2019,Hanlan's Point,26,14.73,Yes
+2023,Hanlan's Point,32,21.52,No
+2016,Bluffer's,22,11.3,No
+2023,Hanlan's Point,24,15.22,Yes
+2015,Centre Island,25,19.48,No
+2021,Centre Island,23,16.18,Yes
+2024,Gibraltar Point,20,18.39,Yes
+2023,Woodbine,21,16.93,Yes
+2023,Bluffer's,37,8.06,No
+2013,Centre Island,30,24.98,Yes
+2021,Hanlan's Point,25,27.45,No
+2024,Other,19,12.39,No
+2019,Hanlan's Point,22,19.16,No
+2010,Hanlan's Point,25,21.85,No
+2018,Other,25,22.97,No
+2024,Centre Island,24,21.52,No
+2022,Other,26,17.42,Yes
+2010,Bluffer's,21,8.8,Yes
+2023,Bluffer's,22,11.8,Yes
+2010,Hanlan's Point,28,19.15,Yes
+2013,Other,25,14.65,No
+2020,Hanlan's Point,26,17.02,No
+2014,Other,28,16.57,No
+2015,Woodbine,25,13.12,Yes
+2012,Bluffer's,18,10.96,No
+2010,Woodbine,25,23.95,No
+2017,Other,25,16.12,Yes
+2015,Gibraltar Point,37,11.82,Yes
+2012,Hanlan's Point,28,14.22,Yes
+2011,Woodbine,19,30.15,No
+2019,Gibraltar Point,24,15.43,Yes
+2023,Woodbine,12,20.9,No
+2017,Other,27,16.46,No
+2010,Woodbine,27,16.5,No
+2010,Hanlan's Point,31,12.4,No
+2023,Other,23,18.11,No
+2014,Centre Island,23,22.45,Yes
+2015,Centre Island,25,18.32,No

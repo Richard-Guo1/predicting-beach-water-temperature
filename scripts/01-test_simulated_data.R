@@ -31,11 +31,11 @@ if (nrow(analysis_data) == 500) {
   stop("Test Failed: The dataset does not have 500 rows.")
 }
 
-# Check if the dataset has 4 columns
-if (ncol(analysis_data) == 4) {
-  message("Test Passed: The dataset has 4 columns.")
+# Check if the dataset has 5 columns
+if (ncol(analysis_data) == 5) {
+  message("Test Passed: The dataset has 5 columns.")
 } else {
-  stop("Test Failed: The dataset does not have 4 columns.")
+  stop("Test Failed: The dataset does not have 5 columns.")
 }
 
 # Check if the 'beach' column contains only valid Toronto beach names
@@ -62,10 +62,17 @@ if (all(!is.na(analysis_data))) {
   stop("Test Failed: The dataset contains missing values.")
 }
 
-# Check if the 'waterfowl' column contains only positive values
-if (all(analysis_data$waterfowl >= 0)) {
-  message("Test Passed: The 'waterfowl' column contains only positive values.")
+# Check if the 'water_temp' column contains only doubles
+if (all(is.double(analysis_data$water_temp))) {
+  message("Test Passed: The 'water_temp' column contains only doubles.")
 } else {
-  stop("Test Failed: The 'waterfowl' column contains negative values.")
+  stop("Test Failed: The 'water_temp' column does not contain only doubles.")
+}
+
+# Check if the 'rain' column contains only 'Yes' and 'No'
+if (all(analysis_data$rain %in% c('Yes', 'No'))) {
+  message("Test Passed: The 'rain' column only contains 'Yes' and 'No' values.")
+} else {
+  stop("Test Failed: The 'rain' column contains unexpected values.")
 }
 

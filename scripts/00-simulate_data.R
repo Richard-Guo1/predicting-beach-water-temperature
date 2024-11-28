@@ -20,15 +20,11 @@ size <- 500
 
 # Define the start and end date
 start_year <- 2010
-end_year <- 2023
+end_year <- 2024
 
 # Beach names
 beaches <- c("Bluffer's", "Centre Island", "Gibraltar Point", 
              "Hanlan's Point", "Woodbine", "Other")
-
-# Define minimum and maximum air temperature
-min_air_temp <- 15
-max_air_temp <- 35
 
 
 # Create a dataset by randomly assigning years, temperatures, and waterfowl 
@@ -40,10 +36,9 @@ analysis_data <- tibble(
   beach = sample(
     beaches, size, replace = TRUE
   ),
-  air_temp = sample(
-    min_air_temp:max_air_temp, size, replace = TRUE
-  ),
-  waterfowl = rpois(size, 30)
+  air_temp = rpois(size, 25),
+  water_temp = round(rnorm(size, 16, 5), 2),
+  rain = sample(c('Yes', 'No'), size, replace = TRUE)
 )
 
 
