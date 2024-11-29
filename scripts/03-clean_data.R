@@ -6,12 +6,14 @@
 # Contact: richard.guo@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: 
-  # The `tidyverse` and 'fastDummies' packages must be installed and loaded
+  # The `tidyverse`, `arrow` and `fastDummies` packages must be installed and 
+    # loaded
   # 02-download_data.R must have been run
 
 #### Workspace setup ####
 library(tidyverse)
 library(fastDummies)
+library(arrow)
 
 #### Clean data ####
 raw_data <- read_csv("data/01-raw_data/raw_data.csv")
@@ -46,4 +48,4 @@ cleaned_data <- cleaned_data[cleaned_data$waterTemp <=
                                3*sd(cleaned_data$waterTemp),]
 
 #### Save data ####
-write_rds(cleaned_data, "data/02-analysis_data/analysis_data.rds")
+write_parquet(cleaned_data, "data/02-analysis_data/analysis_data.parquet")

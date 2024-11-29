@@ -7,6 +7,7 @@ date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 format: pdf
 number-sections: true
+toc: true
 bibliography: references.bib
 ---
 
@@ -16,8 +17,10 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
+library(arrow)
 library(knitr)
-beachData <- readRDS(here::here("data/02-analysis_data/analysis_data.rds"))
+library(modelsummary)
+beachData <- read_parquet(here::here("data/02-analysis_data/analysis_data.parquet"))
 ```
 
 
@@ -25,14 +28,13 @@ beachData <- readRDS(here::here("data/02-analysis_data/analysis_data.rds"))
 
 Overview paragraph
 
-Estimand paragraph
+My estimand is the efficacy of using easily accessible weather information (such as from watching a news channel) to predict the temperature of the water at a beach. By analyzing this dataset, 
 
 Results paragraph
 
 Why it matters paragraph
 
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
-
+Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data discusses how the dataset was obtained and analyzed. @sec-model 
 
 
 
@@ -101,7 +103,7 @@ Use sub-sub-headings for each outcome variable and feel free to combine a few in
 
 
 
-# Model
+# Model {#sec-model}
 
 The goal of our modelling strategy is twofold. Firstly,...
 
@@ -134,13 +136,15 @@ first_model <-
 #| echo: false
 #| eval: true
 #| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
+#| tbl-cap: "Explanatory models of water temperature based on air temperature, rain, and location"
 #| warning: false
+#| 
 
-modelsummary::modelsummary(first_model)
+modelsummary(
+  list("Water Temperature" =first_model),
+  gof_omit = 'AIC|BIC'
+)
 ```
-
-
 
 
 # Discussion

@@ -11,9 +11,12 @@
 
 #### Workspace setup ####
 library(tidyverse)
+library(arrow)
 library(testthat)
 
-analysis_data <- readRDS(here::here("data/02-analysis_data/analysis_data.rds"))
+
+analysis_data <- 
+  read_parquet(here::here("data/02-analysis_data/analysis_data.parquet"))
 
 #### Test data ####
 # Test that the dataset has 13 columns

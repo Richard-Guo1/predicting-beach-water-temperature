@@ -12,9 +12,10 @@
 
 #### Workspace setup ####
 library(tidyverse)
+library(arrow)
 
 #### Read data ####
-analysis_data <- readRDS("data/02-analysis_data/analysis_data.rds")
+analysis_data <- read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 ### Model data ####
 first_model <-
