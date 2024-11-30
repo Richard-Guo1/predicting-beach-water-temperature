@@ -44,7 +44,7 @@ Telegraphing paragraph: The remainder of this paper is structured as follows. @s
 
 ## Overview
 
-The data used in this paper is derived from Open Data Toronto and is read into this paper through the opendatatoronto library [@opendatatoronto]. The particular data set used to analyze the observations made by city staff on the conditions of all guarded Toronto beaches between the months of May and September [@beaches]. All the data analysis was done through R [@citeR] with the aid of the following packages: tidyverse [@tidyverse], fastDummies[@fastdummies], here [@here], dplyr [@dplyr], tibble [@tibble], janitor [@janitor], ggplot2 [@ggplot], and knitr [@knitr]. 
+The data used in this paper is derived from Open Data Toronto and is read into this paper through the opendatatoronto library [@opendatatoronto]. The particular data set used to analyze the observations made by city staff on the conditions of all guarded Toronto beaches between the months of May and September [@beaches]. All the data analysis was done through R [@citeR] with the aid of the following packages: tidyverse [@tidyverse], arrow [@arrow], fastDummies[@fastdummies], here [@here], dplyr [@dplyr], tibble [@tibble], janitor [@janitor], ggplot2 [@ggplot], and knitr [@knitr]. 
 
 ## Measurement
 	
@@ -97,9 +97,22 @@ Add graphs, tables and text.
 Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
 
 
+```{r}
+#| label: fig-beach
+#| fig-cap: Water Temperature Quantiles by Beach
+#| echo: false
+#| warning: false
+#| message: false
 
+beachData |> 
+  ggplot(aes(x = beachName, y = waterTemp, group = beachName)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(x = "Beach",
+       y = "Water Temperature (°C)") +
+  coord_flip()
 
-
+```
 
 
 

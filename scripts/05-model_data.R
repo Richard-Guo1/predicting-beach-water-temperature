@@ -7,15 +7,34 @@
 # License: MIT
 # Pre-requisites:
   # 03-clean_data.R must have been run
-  # The 'tidyverse' package must be installed
+  # The 'tidyverse', 'arrow' and 'fastdummies' packages must be installed
 
 
 #### Workspace setup ####
 library(tidyverse)
+library(fastDummies)
 library(arrow)
 
 #### Read data ####
 analysis_data <- read_parquet("data/02-analysis_data/analysis_data.parquet")
+
+### Turn beach name column into dummy variables ###
+analysis_data <- analysis_data |>
+  fastDummies::dummy_cols(select_columns = "beachName")
+
+analysis_data <- analysis_data |>
+  subset(select = -c(beachName, `beachName_Bluffer's Beach Park`)) |>
+  rename(
+    isCentreIsland = `beachName_Centre Island Beach`,
+    isCherry = `beachName_Cherry Beach`,
+    isGibraltarPoint = `beachName_Gibraltar Point Beach`,
+    isHanlansPoint = `beachName_Hanlan's Point Beach`,
+    isKewBalmy = `beachName_Kew Balmy Beach`,
+    isMarieCurtis = `beachName_Marie Curtis Park East Beach`,
+    isSunnyside = `beachName_Sunnyside Beach`,
+    isWardsIsland = `beachName_Ward's Island Beach`,
+    isWoodbine = `beachName_Woodbine Beaches`
+  )
 
 ### Model data ####
 first_model <-
