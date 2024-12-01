@@ -76,10 +76,7 @@ Talk way more about it.
 
 ## Predictor variables
 
-Add graphs, tables and text.
-
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
-
+The chosen predictor variables from the dataset are the beach name, the air temperature, and the presence of rain. The rain amount category may have provided more accurate estimates, but was dropped due to lack of proper documentation, discussed more in 
 
 ```{r}
 #| label: fig-temps
