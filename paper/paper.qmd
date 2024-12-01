@@ -4,7 +4,7 @@ author: Richard Guo
 thanks: "Code and data are available at: [https://github.com/Richard-Guo1/predicting-beach-water-temperature](https://github.com/Richard-Guo1/predicting-beach-water-temperature)."
 date: today
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "This paper analyzes the efficacy of using easily accessible weather information to predict the water temperature at a beach. Data recorded by City of Toroto staff stationed at various beachfronts between mid May and mid September is used. A linear regression model was used with air temperature, recent rainfall, and the location of the beach as the causal predictors."
 format: pdf
 number-sections: true
 toc: true
@@ -26,11 +26,11 @@ beachData <- read_parquet(here::here("data/02-analysis_data/analysis_data.parque
 
 # Introduction
 
-Overview paragraph
 
-My estimand is the efficacy of using easily accessible weather information (such as from watching a news channel) to predict the temperature of the water at a beach. By analyzing this dataset, 
 
-Results paragraph
+My estimand is the efficacy of using easily accessible weather information (such as from watching a news channel) to predict the temperature of the water at a beach. By analyzing this dataset, I aim to replicate a portion of the decision making process for when people decide to swim at a beach. 
+
+Results paragraph   
 
 Why it matters paragraph
 
@@ -50,13 +50,11 @@ The data used in this paper is derived from Open Data Toronto and is read into t
 	
 Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
 
-## Outcome variables
+## Outcome variable
 
 Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
 
 
-
-.
 
 ```{r}
 #| label: fig-water-temp-year
@@ -73,6 +71,16 @@ Talk more about it.
 
 And also planes (@fig-temps). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
 
+
+Talk way more about it. 
+
+## Predictor variables
+
+Add graphs, tables and text.
+
+Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
+
+
 ```{r}
 #| label: fig-temps
 #| fig-cap: Relationship between Air Temperature and Water Temperature
@@ -87,15 +95,6 @@ beachData |>
   labs(x = "Air Temperature (°C)",
        y = "Water Temperature (°C)")
 ```
-
-Talk way more about it. 
-
-## Predictor variables
-
-Add graphs, tables and text.
-
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
-
 
 ```{r}
 #| label: fig-beach
@@ -118,9 +117,6 @@ beachData |>
 
 # Model {#sec-model}
 
-The goal of our modelling strategy is twofold. Firstly,...
-
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
 
 ## Model set-up
 
@@ -162,15 +158,13 @@ modelsummary(
 
 # Discussion
 
-## First discussion point {#sec-first-point}
+## Beaches, Outdoor Pools, and Indoor Pools {#sec-first-point}
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+
 
 ## Second discussion point
 
-Please don't use these as sub-heading labels - change them to be what your point actually is.
 
-## Third discussion point
 
 ## Weaknesses and next steps
 
