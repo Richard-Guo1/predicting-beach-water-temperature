@@ -30,7 +30,7 @@ My estimand is the efficacy of using easily accessible weather information (such
 
 The result of the analysis done shows that there is a strong correlation between local air and water temperatures, with an increase in one degree Celsius in the air predicting an increase of 0.359 in the water.
 
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data discusses how the dataset was obtained and analyzed. @sec-model discusses the model chosen to analyze the data. @sec-results examines the results of the observations. @sec-discussion contains thoughts on swimming location comparisons, as well as weaknesses and next steps. @sec-appendix is an appendix. @sec-ref contains references.
+Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data discusses how the dataset was obtained and analyzed. @sec-model discusses the model chosen to analyze the data. @sec-results examines the results of the observations. @sec-discussion contains thoughts on swimming location comparisons, as well as weaknesses and next steps. @sec-appendix is an appendix.
 
 
 # Data {#sec-data}
@@ -62,7 +62,7 @@ ggplot(beachData, aes(x = year, y = waterTemp, group = year)) +
 
 ## Predictor variables
 
-The chosen predictor variables from the dataset are the beach name, the air temperature, and the presence of rain. The rain amount category may have provided more accurate estimates, but was dropped due to lack of proper documentation, discussed more in @additional. 
+The chosen predictor variables from the dataset are the beach name, the air temperature, and the presence of rain. The rain amount category may have provided more accurate estimates, but was dropped due to lack of proper documentation, discussed more in @sec-appendix. 
 
 The main predictor of water temperature is the surrounding air temperature. @fig-temps shows a strong positive correlation between the two variables. @fig-beach shows that each beach has a different median temperature. @fig-rain-1 shows that there is a lower median air temperature when it is raining while @fig-rain-2 shows a larger variance but similar median on comparison. This leads to the addition of an interaction predictor between rain and air temperature. 
 
@@ -126,19 +126,18 @@ beachData |>
 
 # Model {#sec-model}
 
-
+The model chosen for analyzing the data was a linear regression model. 
 
 ## Model set-up
 
+After the data set was downloaded, it was cleaned for only information relevant to the modelling. The 'beachName' column contained only character strings indicating which beach the observations came from. For the model, it was separated into multiple dummy variables using the fastDummies [@fastdummies] package. The base case chosen by alphabetical order is Bluffer's Beach Park. The cleaned data was then run through the LM function from the dplyr [@dplyr] package. 
 
 
-### Model justification
+# Results {#sec-results}
 
+Our results are summarized in @tbl-modelresults. On a day with an air temperature of 0 degrees Celsius and no rain, the expected water temperature at Bluffer's Beach Park is 7.547. Each one degree increment in air temperature yields an expected increase of 0.359 in the water. Days which are raining predict a water temperature of 5.81 Celsius with air temperature of 0, and a sharper increase of 0.451 in water temperature per one degree increase in air temperature. Holding the air temperature and rain indicator fixed, each of the other beaches expect water temperatures between 0.5 degrees colder to 3 degrees warmer. 
 
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
+We observe an R Squared value of 0.230, which means that the chosen predictor variables are responsible for 23% of the observed variance. While this value is low, it is sufficient to be used as a non-rigorous predictor of water temperature without proper equipment or being on-site. 
 
 ```{r}
 #| echo: false
@@ -157,7 +156,7 @@ first_model <-
 #| label: tbl-modelresults
 #| tbl-cap: "Explanatory models of water temperature based on air temperature, rain, and location"
 #| warning: false
-#| 
+#| message: false
 
 modelsummary(
   list("Water Temperature" =first_model),
@@ -170,7 +169,7 @@ modelsummary(
 
 ## Beaches, Outdoor Pools, and Indoor Pools {#sec-first-point}
 
-
+Lifeguards in the city of Toronto operate in indoor pools, outdoor pools, and the beachfront. Beach lifeguards require an extra training regimen due to the larger area they are expected to cover. While the beach remains accessible throughout the entire year, lifeguards are only stationed during specific months. Similarly, most city-owned outdoor pools are only open during the summer. Disregarding the environment and culture, the main difference between swimming in beach and outdoor pool water is that all pool water has been treated. Pool water is chlorinated, and kept between 21 to 24 degrees Celsius.  
 
 ## Weaknesses and next steps
 
@@ -182,7 +181,7 @@ modelsummary(
 # Appendix {#sec-appendix}
 
 
-# Additional data details {#additional}
+## Additional data details
 
 
 \newpage
