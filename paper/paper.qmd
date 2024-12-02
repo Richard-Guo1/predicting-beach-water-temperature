@@ -26,18 +26,11 @@ beachData <- read_parquet(here::here("data/02-analysis_data/analysis_data.parque
 
 # Introduction
 
-
-
 My estimand is the efficacy of using easily accessible weather information (such as from watching a news channel) to predict the temperature of the water at a beach. By analyzing this dataset, I aim to replicate a portion of the decision making process for when people decide to swim at a beach. 
 
-Results paragraph   
+The result of the analysis done shows that there is a strong correlation between local air and water temperatures, with an increase in one degree Celsius in the air predicting an increase of 0.359 in the water.
 
-Why it matters paragraph
-
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data discusses how the dataset was obtained and analyzed. @sec-model 
-
-
-
+Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data discusses how the dataset was obtained and analyzed. @sec-model discusses the model chosen to analyze the data. @sec-results examines the results of the observations. @sec-discussion contains thoughts on swimming location comparisons, as well as weaknesses and next steps. 
 
 
 # Data {#sec-data}
@@ -48,12 +41,11 @@ The data used in this paper is derived from Open Data Toronto and is read into t
 
 ## Measurement
 	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+The measurement of each variable in the beach observation dataset was conducted by city of Toronto staff. Thermometers were used to record the temperature of both the water and the air. Some omitted datatypes such as a water fowl count were estimated due to lack of proper equipment. All observations made were then recorded. 
 
 ## Outcome variable
 
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
-
+The outcome variable of 
 
 
 ```{r}
@@ -67,12 +59,6 @@ ggplot(beachData, aes(x = year, y = waterTemp, group = year)) +
   labs(x = "Year", y = "Water Temperature (°C)")
 ```
 
-Talk more about it.
-
-And also planes (@fig-temps). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
-
-
-Talk way more about it. 
 
 ## Predictor variables
 
