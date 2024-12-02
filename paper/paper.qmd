@@ -30,7 +30,7 @@ My estimand is the efficacy of using easily accessible weather information (such
 
 The result of the analysis done shows that there is a strong correlation between local air and water temperatures, with an increase in one degree Celsius in the air predicting an increase of 0.359 in the water.
 
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data discusses how the dataset was obtained and analyzed. @sec-model discusses the model chosen to analyze the data. @sec-results examines the results of the observations. @sec-discussion contains thoughts on swimming location comparisons, as well as weaknesses and next steps. 
+Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data discusses how the dataset was obtained and analyzed. @sec-model discusses the model chosen to analyze the data. @sec-results examines the results of the observations. @sec-discussion contains thoughts on swimming location comparisons, as well as weaknesses and next steps. @sec-appendix is an appendix. @sec-ref contains references.
 
 
 # Data {#sec-data}
@@ -45,7 +45,7 @@ The measurement of each variable in the beach observation dataset was conducted 
 
 ## Outcome variable
 
-The outcome variable of 
+The variable we are interested in is the water temperature. @fig-water-temp-year shows that temperatures observed between mid May and September vary from slightly over 0 to slightly over 30 degrees Celsius. The majority of observations are concentrated between 10 and 20 degrees Celsius. 
 
 
 ```{r}
@@ -62,7 +62,9 @@ ggplot(beachData, aes(x = year, y = waterTemp, group = year)) +
 
 ## Predictor variables
 
-The chosen predictor variables from the dataset are the beach name, the air temperature, and the presence of rain. The rain amount category may have provided more accurate estimates, but was dropped due to lack of proper documentation, discussed more in 
+The chosen predictor variables from the dataset are the beach name, the air temperature, and the presence of rain. The rain amount category may have provided more accurate estimates, but was dropped due to lack of proper documentation, discussed more in @additional. 
+
+The main predictor of water temperature is the surrounding air temperature. @fig-temps shows a strong positive correlation between the two variables. @fig-beach shows that each beach has a different median temperature. @fig-rain-1 shows that there is a lower median air temperature when it is raining while @fig-rain-2 shows a larger variance but similar median on comparison. This leads to the addition of an interaction predictor between rain and air temperature. 
 
 ```{r}
 #| label: fig-temps
@@ -96,9 +98,34 @@ beachData |>
 
 ```
 
+```{r}
+#| label: fig-rain
+#| fig-cap: Air and Water Temperature with Rain
+#| echo: false
+#| warning: false
+#| message: false
 
+
+beachData |> 
+  ggplot(aes(x = rain, y = airTemp, group = rain)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(x = "Rain",
+       y = "Air Temperature (°C)") +
+  coord_flip()
+
+beachData |> 
+  ggplot(aes(x = rain, y = waterTemp, group = rain)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(x = "Rain",
+       y = "Water Temperature (°C)") +
+  coord_flip()
+
+```
 
 # Model {#sec-model}
+
 
 
 ## Model set-up
@@ -139,35 +166,28 @@ modelsummary(
 ```
 
 
-# Discussion
+# Discussion {#sec-discussion}
 
 ## Beaches, Outdoor Pools, and Indoor Pools {#sec-first-point}
 
 
 
-## Second discussion point
-
-
-
 ## Weaknesses and next steps
 
-Weaknesses and next steps should also be included.
 
 \newpage
 
 \appendix
 
-# Appendix {-}
+# Appendix {#sec-appendix}
 
 
-# Additional data details
-
-# Model details {#sec-model-details}
+# Additional data details {#additional}
 
 
 \newpage
 
 
-# References
+# References {#sec-ref}
 
 
