@@ -169,10 +169,11 @@ modelsummary(
 
 ## Beaches, Outdoor Pools, and Indoor Pools {#sec-first-point}
 
-Lifeguards in the city of Toronto operate in indoor pools, outdoor pools, and the beachfront. Beach lifeguards require an extra training regimen due to the larger area they are expected to cover. While the beach remains accessible throughout the entire year, lifeguards are only stationed during specific months. Similarly, most city-owned outdoor pools are only open during the summer. Disregarding the environment and culture, the main difference between swimming in beach and outdoor pool water is that all pool water has been treated. Pool water is chlorinated, and kept between 21 to 24 degrees Celsius.  
+Lifeguards in the city of Toronto operate in indoor pools, outdoor pools, and the beachfront. Beach lifeguards require an extra training regimen due to the larger area they are expected to cover. While the beach remains accessible throughout the entire year, lifeguards are only stationed during specific months. Similarly, most city-owned outdoor pools are only open during the summer. Disregarding the environment and culture, the main difference between swimming in beach and outdoor pool water is that all pool water has been treated. Pool water is chlorinated, and kept between 21 to 24 degrees Celsius. Indoor pools are not subject to colder summer weather or rain, but the enclosure also causes the surrounding pool deck to feel extremely humid on hotter days. The best predictor of which location is chosen seems to remain travel time. 
 
 ## Weaknesses and next steps
 
+While a correlation between water and air temperature can be observed, it does not and should not imply causation. 
 
 \newpage
 
@@ -183,6 +184,9 @@ Lifeguards in the city of Toronto operate in indoor pools, outdoor pools, and th
 
 ## Additional data details
 
+The observations were all hand recorded, which led to some minor errors. In cleaning the data, multiple observations with water temperatures over 50 degrees Celsius could be found, with seven recordings of temperatures over 200. Upon manual review, it is most likely that a decimal point was misplaced. Similarly, over two-thirds of the 'rainAmount' column was empty. 
+
+Additionally, both temperature columns were recorded as a single value for the entire day. The source of the data does not specify what the measure represents, only that it was recorded in degrees Celsius. It is possible for the temperatures to indicate the mean temperature throughout operational hours, the temperature at the specific time of recording, or the peak temperature on the day. I personally find the highest daily temperature option the most likely.
 
 \newpage
 
